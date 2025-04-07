@@ -39,7 +39,7 @@ function Form() {
             loanStatus: Status.PENDING
         }
         try {
-            await axios.post("http://localhost:3000/api/dashboard/user/form", loanDetails, { withCredentials: true });
+            await axios.post("https://creditsea-backend-uukm.onrender.com/api/dashboard/user/form", loanDetails, { withCredentials: true });
         } catch (e) {
             console.log("Fill the form neatly : ", e);
             alert("Fill the form according to the instructions");

@@ -7,7 +7,7 @@ export const getRoleButtons = (email: string): React.ReactNode => {
   const handleRoleChange = async (role: string) => {
     try {
       await axios.put(
-        `http://localhost:3000/api/dashboard/admin/users/update`,
+        `https://creditsea-backend-uukm.onrender.com/api/dashboard/admin/users/update`,
         { email, role },
         { withCredentials: true }
       );

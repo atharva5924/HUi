@@ -15,7 +15,7 @@ const AuthComponent: React.FC = () => {
   const handleLogin = async (credentials: UserCredentials) => {
     try {
       const res = await axios.post<LoginResponse>(
-        "http://localhost:3000/api/auth/login",
+        "https://creditsea-backend-uukm.onrender.com/api/auth/login",
         credentials,
         { withCredentials: true }
       );
@@ -42,7 +42,7 @@ const AuthComponent: React.FC = () => {
     const handleSignUp = async (data: SignUpData) => {
       try {
         const res = await axios.post(
-          "http://localhost:3000/api/auth/register",
+          "https://creditsea-backend-uukm.onrender.com/api/auth/register",
           data,
           { withCredentials: true }
         );
@@ -58,7 +58,7 @@ const AuthComponent: React.FC = () => {
     const handleForgotPassword = async (data: ForgotPasswordData) => {
       try {
         const res = await axios.post(
-          "http://localhost:3000/api/auth/forgot-password",
+          "https://creditsea-backend-uukm.onrender.com/api/auth/forgot-password",
           data,
           { withCredentials: true }
         );

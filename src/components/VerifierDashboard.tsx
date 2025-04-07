@@ -41,7 +41,7 @@ function VerifierDashboard() {
   useEffect(() => {
     const handleData = async () => {
       const response = await axios.get<VerifierDashboardResponse>(
-        "http://localhost:3000/api/dashboard/verifier",
+        "https://creditsea-backend-uukm.onrender.com/api/dashboard/verifier",
         { withCredentials: true }
       );
       const resData = response.data; // Already the correct shape

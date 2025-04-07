@@ -45,7 +45,7 @@ function AdminDashboard() {
   useEffect(() => {
     const handleData = async () => {
       const response = await axios.get<AdminDashboardResponse>(
-        "http://localhost:3000/api/dashboard/admin",
+        "https://creditsea-backend-uukm.onrender.com/api/dashboard/admin",
         { withCredentials: true }
       );
 

@@ -6,7 +6,7 @@ export const getLoanStatusButtons = (loanId: number): React.ReactNode => {
     const handleStatusChange = async (status: string) => {
         try {
             await axios.put(
-                `http://localhost:3000/api/dashboard/verifier/update-status`,
+                `https://creditsea-backend-uukm.onrender.com/api/dashboard/verifier/update-status`,
                 { loanId, status },
                 { withCredentials: true }
             );

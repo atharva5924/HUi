@@ -25,7 +25,7 @@ function UserDashboard() {
         const handleData = async () => {
           try {
             const response = await axios.get<UserDashboardResponse>(
-              "http://localhost:3000/api/dashboard/user",
+              "https://creditsea-backend-uukm.onrender.com/api/dashboard/user",
               { withCredentials: true }
             );
       
